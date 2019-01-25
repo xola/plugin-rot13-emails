@@ -1,0 +1,30 @@
+{
+  "name": "plugin-rot13-emails",
+  "version": "1.0.0",
+  "description": "Sample App with Email Ability to work with Xola Emails",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerickMathew/plugin-rot13-emails.git"
+  },
+  "keywords": [
+    "xola",
+    "xola-app-store",
+    "appStore",
+    "email"
+  ],
+  "author": "Derick Mathew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DerickMathew/plugin-rot13-emails/issues"
+  },
+  "homepage": "https://github.com/DerickMathew/plugin-rot13-emails#readme"
+}
