@@ -1,0 +1,32 @@
+{
+    "name": "Rot13 Cipher Plugin for Xola Emails",
+    "summary": "Encrypts emails sent out by Xola with the rot13 cipher.",
+    "description": "Encrypt your emails, See how basic email manipulation can be done via an app on Xola's appStore",
+    "link": "https://github.com/DerickMathew/plugin-rot13-emails#readme",
+    "developer": "derick@xola.com",
+    "webhooks": {
+        "url": "http://rot13.local/register",
+        "events": [
+            "installation.create",
+            "installation.update",
+            "installation.delete"
+        ]
+    },
+    "abilities": {
+        "email": {
+            "url": "http://rot13.local/encode",
+            "events" : [
+                "order.create.email",
+                "order.update.email"
+            ]
+        }
+    },
+    "email": "derick.j.mathew@gmail.com",
+    "tags": [
+        "Email",
+        "Emails",
+        "Custom emails",
+        "customize",
+        "example"
+    ]
+}

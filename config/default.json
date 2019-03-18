@@ -1,0 +1,13 @@
+{
+  "host": "https://rot13.plugin.xola.com",
+  "port": 11115,
+  "xola": {
+    "url": "https://xola.com"
+  },
+  "elrond": {
+    "preference_key_name": "trip-advisor-review-express-app",
+    "url": "https://elrond.xola.com",
+    "user_id": "store_this_in_local.json",
+    "api_key": "store_this_in_local.json"
+  }
+}
