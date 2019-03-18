@@ -1,7 +1,7 @@
 {
   "name": "plugin-rot13-emails",
   "version": "1.1.0",
-  "description": "Sample App with Email Ability to work with Xola Emails",
+  "description": "Sample App to showcase the Email Ability, by applying the rot13 cipher, on Xola Emails ",
   "main": "index.js",
   "directories": {
     "example": "examples",
@@ -9,7 +9,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start": "pm2 start server.js",
+    "stop": "pm2 stop server.js",
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +29,12 @@
   "bugs": {
     "url": "https://github.com/DerickMathew/plugin-rot13-emails/issues"
   },
-  "homepage": "https://github.com/DerickMathew/plugin-rot13-emails#readme"
+  "homepage": "https://github.com/DerickMathew/plugin-rot13-emails#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "config": "^3.0.1",
+    "express": "^4.16.4",
+    "pm2": "^3.2.9"
+  }
 }
