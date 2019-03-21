@@ -9,17 +9,9 @@
         "events": [
             "installation.create",
             "installation.update",
-            "installation.delete"
+            "installation.delete",
+            "email.traveler"
         ]
-    },
-    "abilities": {
-        "email": {
-            "url": "http://rot13.local/encode",
-            "events" : [
-                "order.create.email",
-                "order.update.email"
-            ]
-        }
     },
     "email": "derick.j.mathew@gmail.com",
     "tags": [
