@@ -1,6 +1,5 @@
 {
-  "host": "https://rot13.local",
-  "port": 11108,
+  "host": "https://rot13.plugin.xola.com",
   "xola": {
     "url": "https://xola.com"
   }

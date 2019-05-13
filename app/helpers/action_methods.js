@@ -1,6 +1,7 @@
-const ElrondService = require('../../services/elrond_service').ElrondService;
-
 const ActionMethods = {
+    getEventName: (req) => {
+        return (req.body && req.body.eventName) ? req.body.eventName : null;
+    },
 
     installPlugin: (req, res) => {
         res.status(200).send("Plugin installed");

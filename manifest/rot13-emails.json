@@ -5,7 +5,7 @@
     "link": "https://github.com/DerickMathew/plugin-rot13-emails#readme",
     "developer": "derick@xola.com",
     "webhooks": {
-        "url": "http://rot13.local/register",
+        "url": "http://rot13.plugin.staging.xola.com/register",
         "events": [
             "installation.create",
             "installation.update",

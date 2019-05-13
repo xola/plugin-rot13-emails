@@ -3,18 +3,12 @@ const express = require('express');
 const router = express.Router();
 
 const Actions = require('../helpers/action_methods').ActionMethods;
-const ElrondService = require('../../services/elrond_service').ElrondService;
-
-// Known Email Events that Xola Provides
-const ORDER_CREATE_EMAIL = 'order.create.email';
-const ORDER_UPDATE_EMAIL = 'order.update.email';
-const ORDER_CANCEL_EMAIL = 'order.cancel.email';
 
 // Hooks that the Xola app store sends across
 const INSTALLATION_CREATE = 'installation.create';
 const INSTALLATION_UPDATE = 'installation.update';
 const INSTALLATION_DELETE = 'installation.delete';
-const EMAIL_TRAVELER = "email.traveler";
+const EMAIL_TRAVELER = "email.create";
 
 router.get('/status', (req, res) => {
     res.status(200).send("OK");
@@ -23,12 +17,7 @@ router.get('/status', (req, res) => {
 router.use('*', bodyParser.json({limit: '256kb'}));
 
 router.all('/register', (req, res) => {
-    // Todo: Remove
-    // console.log("\n");
-    // console.log(req.body);
-    // console.log("\n");
-
-    const eventName = ElrondService.getEventName(req);
+    const eventName = Actions.getEventName(req);
 
     console.log(eventName);
     switch(eventName) {
