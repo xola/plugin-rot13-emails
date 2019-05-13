@@ -39,6 +39,7 @@ router.all('/register', (req, res) => {
 });
 
 router.all('/encode', (req, res) => {
+    // This was only used to test using postman
     Actions.encodeEmail(req, res);
 });
 
