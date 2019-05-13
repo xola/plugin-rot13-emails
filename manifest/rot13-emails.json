@@ -10,7 +10,7 @@
             "installation.create",
             "installation.update",
             "installation.delete",
-            "email.traveler"
+            "email.create"
         ]
     },
     "email": "derick.j.mathew@gmail.com",
