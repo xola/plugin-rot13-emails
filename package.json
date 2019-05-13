@@ -10,8 +10,7 @@
   },
   "scripts": {
     "test": "make test",
-    "start": "pm2 start server.js",
-    "stop": "pm2 stop server.js",
+    "start": "node index.js",
     "dev": "node index.js"
   },
   "repository": {
